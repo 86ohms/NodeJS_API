@@ -11,6 +11,9 @@ mongoose.connect('mongodb://localhost/thermocouple',
     });
 
 const db = mongoose.connection;
+
+
+
 db.on('error', (error) => console.error(error)); // error check
 db.once('open', (error) => console.log('Connected to Mongo Database')) // no errors, connect to database
 
