@@ -2,6 +2,12 @@ const mongoose = require('mongoose')
 
 const thermocoupleSchema = new mongoose.Schema({
     
+    _id: {
+        type: Number,
+        required: true,
+        default: 1
+    },
+
     temp: {
         type: Number,
         required: true
