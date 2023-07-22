@@ -1,0 +1,47 @@
+// Get all entries back from db
+GET http://localhost:3000/thermocouple
+
+###
+// Get one entry back via ID
+GET http://localhost:3000/thermocouple/64b9fd7d83e40b7659c99dee
+
+###
+
+POST http://localhost:3000/thermocouple
+Content-Type: application/json
+
+
+{
+    "temp": 102,
+    "status": "ON",
+    "time": 73668,
+    "sp1_time": 12,
+    "sp1_temp": 22.2,
+    "sp2_time": 22,
+    "sp2_temp": 22.2,
+    "sp3_time": 32,
+    "sp3_temp": 22.2
+
+}
+
+###
+
+DELETE http://localhost:3000/thermocouple/64b565dfcf779ad287744a6c
+
+###
+
+PATCH  http://localhost:3000/thermocouple/64bc3b4548cc5074b137494e
+Content-Type: application/json
+
+{
+    "temp": 102,
+    "status": "ON",
+    "time": 73668,
+    "sp1_time": 15,
+    "sp1_temp": 22.2,
+    "sp2_time": 22,
+    "sp2_temp": 22.2,
+    "sp3_time": 32,
+    "sp3_temp": 22.2
+
+}
