@@ -28,10 +28,10 @@ router.post('/', async (req, res) => { // requests by ID
         time: req.body.time,
         sp1_time: req.body.sp1_time,
         sp1_temp: req.body.sp1_temp,
-        sp2_time: req.body.sp1_time,
-        sp2_temp: req.body.sp1_temp,
-        sp3_time: req.body.sp1_time,
-        sp4_temp: req.body.sp1_temp
+        sp2_time: req.body.sp2_time,
+        sp2_temp: req.body.sp2_temp,
+        sp3_time: req.body.sp3_time,
+        sp3_temp: req.body.sp3_temp
 })
 
 try {
@@ -43,10 +43,10 @@ try {
       time: req.body.time,
       sp1_time: req.body.sp1_time,
       sp1_temp: req.body.sp1_temp,
-      sp2_time: req.body.sp1_time,
-      sp2_temp: req.body.sp1_temp,
-      sp3_time: req.body.sp1_time,
-      sp4_temp: req.body.sp1_temp
+      sp2_time: req.body.sp2_time,
+      sp2_temp: req.body.sp2_temp,
+      sp3_time: req.body.sp3_time,
+      sp3_temp: req.body.sp3_temp
     })
 
     const newSetting = await thermocouple.save();
